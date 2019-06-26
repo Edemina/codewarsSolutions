@@ -1,20 +1,20 @@
-## Codewars Tasks solved since 06.25.19
+# Codewars Katas Solved since 06.25.19
 
 
 | Name          | Link          | Date     |
 | ------------- |:-------------:| --------:|
-| Who is going to pay for the wall?  |[](https://www.codewars.com/kata//58bf9bd943fadb2a980000a7)  | 06.25.19 |
+| Who is going to pay for the wall?  |[https://www.codewars.com/kata//58bf9bd943fadb2a980000a7]  | 06.25.19 |
 | Sum Mixed Array   |      | 06.25.19 |
 | Multiples of 3 or 5 |       | 06.25.19 |
 | Count Odd Numbers below n  |        | 06.25.19 |
-| Array plus array |[](https://www.codewars.com/kata/5a2be17aee1aaefe2a000151)        | 06.25.19 |
+| Array plus array |[https://www.codewars.com/kata/5a2be17aee1aaefe2a000151]       | 06.25.19 |
 
 
-## Solutions
+# Solutions
+## Initial Level
+# 06.25.19
 
-06.25.19
-
-**Who is going to pay for the wall?**
+**Who is going to pay for the wall?**  [https://www.codewars.com/kata//58bf9bd943fadb2a980000a7]
 ```javascript
 function whoIsPaying(name){
   let arr = [name];
@@ -60,7 +60,7 @@ function oddCount(n){
 }
 ```
 
-**Array plus array**
+**Array plus array**  [https://www.codewars.com/kata/5a2be17aee1aaefe2a000151]
 ```javascript
 function arrayPlusArray(arr1, arr2) {
   let arrSum = 0;
