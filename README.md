@@ -4,6 +4,8 @@ _________________
 
 | Name          | Link          | Date     |
 | ------------- |:-------------:| :-------:|
+| pick a set of first elements |[https://www.codewars.com/kata//572b77262bedd351e9000076](https://www.codewars.com/kata//572b77262bedd351e9000076 "pick a set of first elements") | 06.26.19 |
+| Jenny's secret message |[https://www.codewars.com/kata//55225023e1be1ec8bc000390](https://www.codewars.com/kata//55225023e1be1ec8bc000390 "Jenny's secret message") | 06.26.19 |
 | Who is going to pay for the wall?  |[https://www.codewars.com/kata//58bf9bd943fadb2a980000a7](https://www.codewars.com/kata//58bf9bd943fadb2a980000a7 "Who is going to pay for the wall?") | 06.25.19 |
 | Sum Mixed Array   |[https://www.codewars.com/kata//57eaeb9578748ff92a000009](https://www.codewars.com/kata//57eaeb9578748ff92a000009 "Sum Mixed Array")     | 06.25.19 |
 | Multiples of 3 or 5 |[https://www.codewars.com/kata//514b92a657cdc65150000006](https://www.codewars.com/kata//514b92a657cdc65150000006 "Multiples of 3 or 5")       | 06.25.19 |
@@ -14,6 +16,23 @@ _________________
 # My Solutions
 ________________
 ## Initial Level
+
+### 06.26.19
+
+**pick a set of first elements**  [https://www.codewars.com/kata//572b77262bedd351e9000076](https://https://www.codewars.com/kata//572b77262bedd351e9000076 "pick a set of first elements")
+```javascript
+function first(arr, n=1) {
+   return arr.slice(0,n);
+}
+```
+
+**Jenny's secret message**  [https://www.codewars.com/kata//55225023e1be1ec8bc000390](https://www.codewars.com/kata//55225023e1be1ec8bc000390 "Jenny's secret message")
+```javascript
+function greet(name){
+  return name === "Johnny" ? "Hello, my love!" : "Hello, " + name + "!";
+}
+```
+
 ### 06.25.19
 
 **Who is going to pay for the wall?**  [https://www.codewars.com/kata//58bf9bd943fadb2a980000a7](https://www.codewars.com/kata//58bf9bd943fadb2a980000a7 "Who is going to pay for the wall?")
