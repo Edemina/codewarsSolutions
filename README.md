@@ -4,9 +4,9 @@ _________________
 
 | Name          | Link          | Date     |
 | ------------- |:-------------:| :-------:|
-| Create Phone Number |[https://www.codewars.com/kata//525f50e3b73515a6db000b83](https://www.codewars.com/kata//525f50e3b73515a6db000b83 "Create Phone Number"))      | 06.28.19 |
-| Credit card issuer checking |[https://www.codewars.com/kata//5701e43f86306a615c001868](https://www.codewars.com/kata//5701e43f86306a615c001868 "Credit card issuer checking"))      | 06.28.19 |
-| Returning Strings |[https://www.codewars.com/kata//55a70521798b14d4750000a4](https://www.codewars.com/kata//55a70521798b14d4750000a4 "Returning Strings"))      | 06.27.19 |
+| Create Phone Number |[https://www.codewars.com/kata//525f50e3b73515a6db000b83](https://www.codewars.com/kata//525f50e3b73515a6db000b83 "Create Phone Number")      | 06.28.19 |
+| Credit card issuer checking |[https://www.codewars.com/kata//5701e43f86306a615c001868](https://www.codewars.com/kata//5701e43f86306a615c001868 "Credit card issuer checking")      | 06.28.19 |
+| Returning Strings |[https://www.codewars.com/kata//55a70521798b14d4750000a4](https://www.codewars.com/kata//55a70521798b14d4750000a4 "Returning Strings")      | 06.27.19 |
 | pick a set of first elements |[https://www.codewars.com/kata//572b77262bedd351e9000076](https://www.codewars.com/kata//572b77262bedd351e9000076 "pick a set of first elements") | 06.26.19 |
 | Jenny's secret message |[https://www.codewars.com/kata//55225023e1be1ec8bc000390](https://www.codewars.com/kata//55225023e1be1ec8bc000390 "Jenny's secret message") | 06.26.19 |
 | Who is going to pay for the wall?  |[https://www.codewars.com/kata//58bf9bd943fadb2a980000a7](https://www.codewars.com/kata//58bf9bd943fadb2a980000a7 "Who is going to pay for the wall?") | 06.25.19 |
