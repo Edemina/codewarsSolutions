@@ -3,7 +3,7 @@ _________________
 
 
 |Level | Name          | Link          | Date     |
-|:----: | ------------- |:-------------:| :-------:|
+|:------: | -------------------- |:--------------------:| :-------:|
 | 7 kyu | Print a Rectangle Using Asterisks |[https://www.codewars.com/kata/5937ae46377144bb2f000029](https://www.codewars.com/kata/5937ae46377144bb2f000029 "Print a Rectangle Using Asterisks")      | 06.28.19 |
 | 7 kyu | String ends with? |[https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d](https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d "String ends with?")      | 06.28.19 |
 | 8 kyu | Do I get a bonus? |[https://www.codewars.com/kata/56f6ad906b88de513f000d96](https://www.codewars.com/kata/56f6ad906b88de513f000d96 "Do I get a bonus?")      | 06.28.19 |
