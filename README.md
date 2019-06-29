@@ -20,6 +20,8 @@ _________________
 ________________
 ## Strings
 
+**new sulution +++++++++++++**
+
 ### 06.28.19
 
 **Create Phone Number**  [[https://www.codewars.com/kata//525f50e3b73515a6db000b83](https://www.codewars.com/kata//525f50e3b73515a6db000b83 "Create Phone Number")
