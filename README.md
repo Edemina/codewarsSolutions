@@ -4,6 +4,10 @@ _________________
 
 |Level | Name          | Link          | Date     |
 |:------: | -------------------- |:--------------------:| :-------:|
+|   kyu |  |[]( "")      |    |
+| 7 kyu | Shortest Word |[https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9](https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9 "Shortest Word")      | 06.30.19 |
+| 6 kyu | String average |[https://www.codewars.com/kata/5966847f4025872c7d00015b](https://www.codewars.com/kata/5966847f4025872c7d00015b "String average")      | 06.30.19 |
+| 7 kyu | sPoNgEbOb MeMe |[https://www.codewars.com/kata/5982619d2671576e90000017](https://www.codewars.com/kata/5982619d2671576e90000017 "sPoNgEbOb MeMe")      | 06.30.19 |
 | 7 kyu | Print a Rectangle Using Asterisks |[https://www.codewars.com/kata/5937ae46377144bb2f000029](https://www.codewars.com/kata/5937ae46377144bb2f000029 "Print a Rectangle Using Asterisks")      | 06.28.19 |
 | 7 kyu | String ends with? |[https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d](https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d "String ends with?")      | 06.28.19 |
 | 8 kyu | Do I get a bonus? |[https://www.codewars.com/kata/56f6ad906b88de513f000d96](https://www.codewars.com/kata/56f6ad906b88de513f000d96 "Do I get a bonus?")      | 06.28.19 |
@@ -24,6 +28,78 @@ _________________
 # My Solutions
 ________________
 ## Strings
+
+### 06.30.19
+
+**Shortest Word** [https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9](https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9 "Shortest Word")
+```javascript
+function findShort(s){
+  let sArr = s.split(' ');
+  let sArrL = [];
+  for ( let i = 0; i < sArr.length; i++){
+    sArrL.push(sArr[i].length);
+  }
+  return Math.min(...sArrL);
+}
+```
+
+**String average** [https://www.codewars.com/kata/5966847f4025872c7d00015b](https://www.codewars.com/kata/5966847f4025872c7d00015b "String average")
+```javascript
+function averageString(str) {
+  if (!str) return 'n/a';
+  let d =  {
+    'zero' : 0,
+    'one' :  1,
+    'two' :  2,
+    'three' :  3,
+    'four' :  4,
+    'five' :  5,
+    'six' :  6,
+    'seven' :  7,
+    'eight' :  8,
+    'nine' :  9,
+   }
+
+   let d1 =  {
+    0:'zero',
+    1:'one',
+    2:'two',
+    3:'three',
+    4:'four',
+    5:'five',
+    6:'six',
+    7:'seven',
+    8:'eight',
+    9:'nine',
+   }
+
+  const numStr = str.split(' ');
+  let sum = 0;
+
+  for (let i = 0; i < numStr.length; i++){
+    if(d[numStr[i]] !== undefined){
+      sum += d[numStr[i]];
+    } else{
+      return 'n/a';
+    }
+  }
+
+  const avg = Math.floor(sum/numStr.length);
+
+  return d1[avg];
+}
+```
+
+**sPoNgEbOb MeMe** [https://www.codewars.com/kata/5982619d2671576e90000017](https://www.codewars.com/kata/5982619d2671576e90000017 "sPoNgEbOb MeMe")
+```javascript
+function spongeMeme(s) {
+  let s1 = '';
+  for (let i = 0; i < s.length; i++){
+    i % 2 === 0 ? s1 += s[i].toUpperCase() : s1 += s[i].toLowerCase();
+  }
+  return s1;
+}
+```
 
 ### 06.28.19
 
