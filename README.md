@@ -1,6 +1,6 @@
 # Codewars Katas Solved since 06.25.19
 
-new version 1.01
+new version 1.02
 _________________
 
 
