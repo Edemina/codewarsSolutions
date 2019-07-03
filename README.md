@@ -3,9 +3,9 @@
 
 |Level | Name          | Link          | Date     |
 |:------: | -------------------- |:--------------------:| :-------:|
-|   kyu |  |[]( "")      |    |
-|   kyu |  |[]( "")      | 07.01.19 |
-|   kyu |  |[]( "")      | 07.01.19 |
+|    |  |[]( "")      |    |
+| 7 kyu | Sum ALL the arrays! |[https://www.codewars.com/kata/5594463eaf1701909c0000d4](https://www.codewars.com/kata/5594463eaf1701909c0000d4 "Sum ALL the arrays!")      | 07.01.19 |
+| 6 kyu | Arrays Similar |[https://www.codewars.com/kata/51e704f2d8dbace389000279](https://www.codewars.com/kata/51e704f2d8dbace389000279 "Arrays Similar")      | 07.01.19 |
 | 8 kyu | Holiday VI - Shark Pontoon |[https://www.codewars.com/kata/57e921d8b36340f1fd000059](https://www.codewars.com/kata/57e921d8b36340f1fd000059 "Holiday VI - Shark Pontoon")      | 07.02.19 |
 | 7 kyu | Fix string case |[https://www.codewars.com/kata/5b180e9fedaa564a7000009a](https://www.codewars.com/kata/5b180e9fedaa564a7000009a "Fix string case")      | 07.01.19 |
 | 8 kyu | Convert boolean values to strings 'Yes' or 'No'. |[https://www.codewars.com/kata/53369039d7ab3ac506000467](https://www.codewars.com/kata/53369039d7ab3ac506000467 "Convert boolean values to strings 'Yes' or 'No'.")      | 07.01.19 |
@@ -36,14 +36,23 @@ ________________
 
 ### 07.02.19
 
-**** []( "")
+**Sum ALL the arrays!** [https://www.codewars.com/kata/5594463eaf1701909c0000d4](https://www.codewars.com/kata/5594463eaf1701909c0000d4 "Sum ALL the arrays!")
 ```javascript
-
+function arraySum(arr) {
+  let b = arr.toString().split(',');
+  let sum = 0;
+  for ( let i = 0; i < b.length; i++){
+    sum += Number.isNaN(+(b[i])) ? 0: +(b[i]);
+  }
+  return sum;
+}
 ```
 
-**** []( "")
+**Arrays Similar** [https://www.codewars.com/kata/51e704f2d8dbace389000279](https://www.codewars.com/kata/51e704f2d8dbace389000279 "Arrays Similar")
 ```javascript
-
+function arraysSimilar(arr1, arr2) {
+  return JSON.stringify(arr1.sort()) === JSON.stringify(arr2.sort());
+}
 ```
 
 **Holiday VI - Shark Pontoon** [https://www.codewars.com/kata/57e921d8b36340f1fd000059](https://www.codewars.com/kata/57e921d8b36340f1fd000059 "Holiday VI - Shark Pontoon")
