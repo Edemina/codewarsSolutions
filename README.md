@@ -1,12 +1,15 @@
 # Codewars Katas Solved since 06.25.19
 
-new version 1.02
-_________________
-
 
 |Level | Name          | Link          | Date     |
 |:------: | -------------------- |:--------------------:| :-------:|
 |   kyu |  |[]( "")      |    |
+|   kyu |  |[]( "")      | 07.01.19 |
+|   kyu |  |[]( "")      | 07.01.19 |
+| 8 kyu | Holiday VI - Shark Pontoon |[https://www.codewars.com/kata/57e921d8b36340f1fd000059](https://www.codewars.com/kata/57e921d8b36340f1fd000059 "Holiday VI - Shark Pontoon")      | 07.02.19 |
+| 7 kyu | Fix string case |[https://www.codewars.com/kata/5b180e9fedaa564a7000009a](https://www.codewars.com/kata/5b180e9fedaa564a7000009a "Fix string case")      | 07.01.19 |
+| 8 kyu | Convert boolean values to strings 'Yes' or 'No'. |[https://www.codewars.com/kata/53369039d7ab3ac506000467](https://www.codewars.com/kata/53369039d7ab3ac506000467 "Convert boolean values to strings 'Yes' or 'No'.")      | 07.01.19 |
+| 8 kyu | Double Char |[https://www.codewars.com/kata/56b1f01c247c01db92000076](https://www.codewars.com/kata/56b1f01c247c01db92000076 "Double Char")      | 07.01.19 |
 | 7 kyu | Shortest Word |[https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9](https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9 "Shortest Word")      | 06.30.19 |
 | 6 kyu | String average |[https://www.codewars.com/kata/5966847f4025872c7d00015b](https://www.codewars.com/kata/5966847f4025872c7d00015b "String average")      | 06.30.19 |
 | 7 kyu | sPoNgEbOb MeMe |[https://www.codewars.com/kata/5982619d2671576e90000017](https://www.codewars.com/kata/5982619d2671576e90000017 "sPoNgEbOb MeMe")      | 06.30.19 |
@@ -30,6 +33,59 @@ _________________
 # My Solutions
 ________________
 ## Strings
+
+### 07.02.19
+
+**** []( "")
+```javascript
+
+```
+
+**** []( "")
+```javascript
+
+```
+
+**Holiday VI - Shark Pontoon** [https://www.codewars.com/kata/57e921d8b36340f1fd000059](https://www.codewars.com/kata/57e921d8b36340f1fd000059 "Holiday VI - Shark Pontoon")
+```javascript
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+  if (dolphin === true){
+    sharkSpeed = sharkSpeed/2;
+  }
+  return pontoonDistance / youSpeed < sharkDistance / sharkSpeed ? "Alive!":"Shark Bait!";
+}
+```
+
+### 07.01.19
+
+**Fix string case** [https://www.codewars.com/kata/5b180e9fedaa564a7000009a](https://www.codewars.com/kata/5b180e9fedaa564a7000009a "Fix string case")
+```javascript
+function solve(s){
+  let arr1 = s.match(/[A-Z]/g);
+  let arr2 = s.match(/[a-z]/g);
+    if (arr1 == null || arr2 == null) return s;
+    return arr1.length <= arr2.length ? s.toLowerCase() : s.toUpperCase();
+ }
+```
+
+**Convert boolean values to strings 'Yes' or 'No'.** [https://www.codewars.com/kata/53369039d7ab3ac506000467](https://www.codewars.com/kata/53369039d7ab3ac506000467 "Convert boolean values to strings 'Yes' or 'No'.")
+```javascript
+function boolToWord( bool ){
+  return (bool) ? 'Yes': 'No';
+}
+```
+
+**Double Char** [https://www.codewars.com/kata/56b1f01c247c01db92000076](https://www.codewars.com/kata/56b1f01c247c01db92000076 "Double Char")
+```javascript
+function doubleChar(str) {
+  let newStr = '';
+  for (let i = 0; i < str.length; i++){
+    newStr += str[i].repeat(2);
+  }
+  return newStr;
+}
+```
+
 
 ### 06.30.19
 
