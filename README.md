@@ -5,9 +5,9 @@
 |:------: | -------------------- |:--------------------:| :-------:|
 |    |  |[]( "")      |    |
 |    |  |[]( "")      |    |
-|    |  |[]( "")      |    |
-| 7 kyu | Sum ALL the arrays! |[https://www.codewars.com/kata/5594463eaf1701909c0000d4](https://www.codewars.com/kata/5594463eaf1701909c0000d4 "Sum ALL the arrays!")      | 07.01.19 |
-| 6 kyu | Arrays Similar |[https://www.codewars.com/kata/51e704f2d8dbace389000279](https://www.codewars.com/kata/51e704f2d8dbace389000279 "Arrays Similar")      | 07.01.19 |
+| 7 kyu | Vowel Count |[https://www.codewars.com/kata/54ff3102c1bad923760001f3](https://www.codewars.com/kata/54ff3102c1bad923760001f3 "Vowel Count")      | 07.03.19   |
+| 7 kyu | Sum ALL the arrays! |[https://www.codewars.com/kata/5594463eaf1701909c0000d4](https://www.codewars.com/kata/5594463eaf1701909c0000d4 "Sum ALL the arrays!")      | 07.02.19 |
+| 6 kyu | Arrays Similar |[https://www.codewars.com/kata/51e704f2d8dbace389000279](https://www.codewars.com/kata/51e704f2d8dbace389000279 "Arrays Similar")      | 07.02.19 |
 | 8 kyu | Holiday VI - Shark Pontoon |[https://www.codewars.com/kata/57e921d8b36340f1fd000059](https://www.codewars.com/kata/57e921d8b36340f1fd000059 "Holiday VI - Shark Pontoon")      | 07.02.19 |
 | 7 kyu | Fix string case |[https://www.codewars.com/kata/5b180e9fedaa564a7000009a](https://www.codewars.com/kata/5b180e9fedaa564a7000009a "Fix string case")      | 07.01.19 |
 | 8 kyu | Convert boolean values to strings 'Yes' or 'No'. |[https://www.codewars.com/kata/53369039d7ab3ac506000467](https://www.codewars.com/kata/53369039d7ab3ac506000467 "Convert boolean values to strings 'Yes' or 'No'.")      | 07.01.19 |
@@ -35,6 +35,27 @@
 # My Solutions
 ________________
 ## Strings
+
+**** []( "V")
+```javascript
+
+```
+
+### 07.03.19
+
+**Vowel Count** [https://www.codewars.com/kata/54ff3102c1bad923760001f3](https://www.codewars.com/kata/54ff3102c1bad923760001f3 "Vowel Count")
+```javascript
+function getCount(str) {
+  var vowelsCount = 0;
+   for (let i = 0; i < str.length; i++){
+       let vowArr = ['a', 'e', 'i', 'o', 'u'];
+       for (let j = 0; j < vowArr.length; j++){
+           if (str[i] === vowArr[j]) vowelsCount++;
+       }
+   }
+  return vowelsCount;
+}
+```
 
 ### 07.02.19
 
