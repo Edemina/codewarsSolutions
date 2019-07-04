@@ -1,8 +1,5 @@
 # Codewars Katas Solved since 06.25.19
 
-new version 1.02
-_________________
-
 
 |Level | Name          | Link          | Date     |
 |:------: | -------------------- |:--------------------:| :-------:|
@@ -33,6 +30,68 @@ _________________
 # My Solutions
 ________________
 ## Strings
+
+### 07.02.19
+
+**Sum ALL the arrays!** [https://www.codewars.com/kata/5594463eaf1701909c0000d4](https://www.codewars.com/kata/5594463eaf1701909c0000d4 "Sum ALL the arrays!")
+```javascript
+function arraySum(arr) {
+  let b = arr.toString().split(',');
+  let sum = 0;
+  for ( let i = 0; i < b.length; i++){
+    sum += Number.isNaN(+(b[i])) ? 0: +(b[i]);
+  }
+  return sum;
+}
+```
+
+**Arrays Similar** [https://www.codewars.com/kata/51e704f2d8dbace389000279](https://www.codewars.com/kata/51e704f2d8dbace389000279 "Arrays Similar")
+```javascript
+function arraysSimilar(arr1, arr2) {
+  return JSON.stringify(arr1.sort()) === JSON.stringify(arr2.sort());
+}
+```
+
+**Holiday VI - Shark Pontoon** [https://www.codewars.com/kata/57e921d8b36340f1fd000059](https://www.codewars.com/kata/57e921d8b36340f1fd000059 "Holiday VI - Shark Pontoon")
+```javascript
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+  if (dolphin === true){
+    sharkSpeed = sharkSpeed/2;
+  }
+  return pontoonDistance / youSpeed < sharkDistance / sharkSpeed ? "Alive!":"Shark Bait!";
+}
+```
+
+### 07.01.19
+
+**Fix string case** [https://www.codewars.com/kata/5b180e9fedaa564a7000009a](https://www.codewars.com/kata/5b180e9fedaa564a7000009a "Fix string case")
+```javascript
+function solve(s){
+  let arr1 = s.match(/[A-Z]/g);
+  let arr2 = s.match(/[a-z]/g);
+    if (arr1 == null || arr2 == null) return s;
+    return arr1.length <= arr2.length ? s.toLowerCase() : s.toUpperCase();
+ }
+```
+
+**Convert boolean values to strings 'Yes' or 'No'.** [https://www.codewars.com/kata/53369039d7ab3ac506000467](https://www.codewars.com/kata/53369039d7ab3ac506000467 "Convert boolean values to strings 'Yes' or 'No'.")
+```javascript
+function boolToWord( bool ){
+  return (bool) ? 'Yes': 'No';
+}
+```
+
+**Double Char** [https://www.codewars.com/kata/56b1f01c247c01db92000076](https://www.codewars.com/kata/56b1f01c247c01db92000076 "Double Char")
+```javascript
+function doubleChar(str) {
+  let newStr = '';
+  for (let i = 0; i < str.length; i++){
+    newStr += str[i].repeat(2);
+  }
+  return newStr;
+}
+```
+
 
 ### 06.30.19
 
