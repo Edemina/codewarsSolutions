@@ -7,6 +7,9 @@ _________________
 |Level | Name          | Link          | Date     |
 |:------: | -------------------- |:--------------------:| :-------:|
 |   kyu |  |[]( "")      |    |
+|   kyu |  |[]( "")      |    |
+|   kyu |  |[]( "")      |    |
+| 7 kyu | Vowel Count |[https://www.codewars.com/kata/54ff3102c1bad923760001f3](https://www.codewars.com/kata/54ff3102c1bad923760001f3 "Vowel Count")      | 07.03.2019   |
 | 7 kyu | Shortest Word |[https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9](https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9 "Shortest Word")      | 06.30.19 |
 | 6 kyu | String average |[https://www.codewars.com/kata/5966847f4025872c7d00015b](https://www.codewars.com/kata/5966847f4025872c7d00015b "String average")      | 06.30.19 |
 | 7 kyu | sPoNgEbOb MeMe |[https://www.codewars.com/kata/5982619d2671576e90000017](https://www.codewars.com/kata/5982619d2671576e90000017 "sPoNgEbOb MeMe")      | 06.30.19 |
