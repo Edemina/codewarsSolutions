@@ -4,6 +4,9 @@
 |Level | Name          | Link          | Date     |
 |:------: | -------------------- |:--------------------:| :-------:|
 |  |  |[]( "") |  |
+| 8 kyu | Reversed Strings |[https://www.codewars.com/kata/5168bb5dfe9a00b126000018](https://www.codewars.com/kata/5168bb5dfe9a00b126000018 "Reversed Strings") | 07.05.19 |
+| 8 kyu | String repeat |[https://www.codewars.com/kata/57a0e5c372292dd76d000d7e](https://www.codewars.com/kata/57a0e5c372292dd76d000d7e "String repeat") | 07.05.19 |
+| 7 kyu | Odd-Even String Sort |[https://www.codewars.com/kata/580755730b5a77650500010c](https://www.codewars.com/kata/580755730b5a77650500010c "Odd-Even String Sort") | 07.05.19 |
 | 5 kyu | Simple Pig Latin |[https://www.codewars.com/kata/520b9d2ad5c005041100000f](https://www.codewars.com/kata/520b9d2ad5c005041100000f "Simple Pig Latin") | 07.05.19  |
 | 6 kyu | WeIrD StRiNg CaSe |[https://www.codewars.com/kata/52b757663a95b11b3d00062d](https://www.codewars.com/kata/52b757663a95b11b3d00062d "WeIrD StRiNg CaSe") | 07.05.19  |
 | 7 kyu | Vowel one |[https://www.codewars.com/kata/580751a40b5a777a200000a1](https://www.codewars.com/kata/580751a40b5a777a200000a1 "Vowel one") | 07.04.19 |
@@ -48,6 +51,43 @@ ________________
 ```
 
 ### 07.05.19
+
+*version 2*
+**Reversed Strings** [https://www.codewars.com/kata/5168bb5dfe9a00b126000018](https://www.codewars.com/kata/5168bb5dfe9a00b126000018 "Reversed Strings")
+```javascript
+function solution(str){
+  return str.split('').reverse().join('');
+}
+```
+
+*version 1*
+```javascript
+function solution(str){
+  let newStr = '';
+  for (let i = str.length - 1; i >= 0; i--){
+    newStr += str[i];
+  }
+  return newStr;
+}
+```
+
+**String repeat** [https://www.codewars.com/kata/57a0e5c372292dd76d000d7e](https://www.codewars.com/kata/57a0e5c372292dd76d000d7e "String repeat")
+```javascript
+function repeatStr (n, s) {
+  return s.repeat(n);
+}
+```
+
+**Odd-Even String Sort** [https://www.codewars.com/kata/580755730b5a77650500010c](https://www.codewars.com/kata/580755730b5a77650500010c "Odd-Even String Sort")
+```javascript
+function sortMyString(s) {
+    let s1 = '', s2 = '';
+    for (let i = 0; i < s.length; i++){
+      i % 2 === 0 ? s1 += s[i] : s2 += s[i];
+    }
+    return `${s1} ${s2}`;
+}
+```
 
 **Simple Pig Latin** [https://www.codewars.com/kata/520b9d2ad5c005041100000f](https://www.codewars.com/kata/520b9d2ad5c005041100000f "Simple Pig Latin")
 ```javascript
