@@ -3,8 +3,14 @@
 
 |Level | Name          | Link          | Date     |
 |:------: | -------------------- |:--------------------:| :-------:|
-|    |  |[]( "")      |    |
-|    |  |[]( "")      |    |
+|  |  |[]( "") |    |
+|  |  |[]( "") |    |
+|  |  |[]( "") | 07.04.19  |
+|  |  |[]( "") | 07.04.19 |
+|  |  |[]( "") | 07.04.19 |
+| 8 kyu | Multiple of index |[https://www.codewars.com/kata/5a34b80155519e1a00000009](https://www.codewars.com/kata/5a34b80155519e1a00000009 "Multiple of index") | 07.04.19  |
+| 8 kyu | Count of positives / sum of negatives |[https://www.codewars.com/kata/576bb71bbbcf0951d5000044](https://www.codewars.com/kata/576bb71bbbcf0951d5000044 "Count of positives / sum of negatives") | 07.04.19  |
+| 8 kyu | Merge two sorted arrays into one |[https://www.codewars.com/kata/5899642f6e1b25935d000161](https://www.codewars.com/kata/5899642f6e1b25935d000161 "Merge two sorted arrays into one")      |  07.04.19   |
 | 7 kyu | Vowel Count |[https://www.codewars.com/kata/54ff3102c1bad923760001f3](https://www.codewars.com/kata/54ff3102c1bad923760001f3 "Vowel Count")      | 07.03.19   |
 | 7 kyu | Sum ALL the arrays! |[https://www.codewars.com/kata/5594463eaf1701909c0000d4](https://www.codewars.com/kata/5594463eaf1701909c0000d4 "Sum ALL the arrays!")      | 07.02.19 |
 | 6 kyu | Arrays Similar |[https://www.codewars.com/kata/51e704f2d8dbace389000279](https://www.codewars.com/kata/51e704f2d8dbace389000279 "Arrays Similar")      | 07.02.19 |
@@ -39,6 +45,56 @@ ________________
 **** []( "V")
 ```javascript
 
+```
+
+### 07.04.19
+
+**** []( "V")
+```javascript
+
+```
+
+**Multiple of index** [https://www.codewars.com/kata/5a34b80155519e1a00000009](https://www.codewars.com/kata/5a34b80155519e1a00000009 "Multiple of index")
+```javascript
+function multipleOfIndex(arr) {
+  return arr.filter((el, i) => el%i === 0);
+}
+```
+
+**Count of positives / sum of negatives** [https://www.codewars.com/kata/576bb71bbbcf0951d5000044](https://www.codewars.com/kata/576bb71bbbcf0951d5000044 "Count of positives / sum of negatives")
+```javascript
+function countPositivesSumNegatives(input) {
+    let result = [];
+    let countPositive = 0;
+    let sumNegative = 0;
+    if(input === null || input.length === 0) return result;
+
+    for (let i = 0; i < input.length; i++) {
+      if (input[i] > 0) {
+        countPositive++;
+      }
+      if (input[i] < 0) {
+        sumNegative += input[i];
+      }
+    }
+    result.push(countPositive);
+    result.push(sumNegative);
+  return result;
+}
+```
+
+**Merge two sorted arrays into one** [https://www.codewars.com/kata/5899642f6e1b25935d000161](https://www.codewars.com/kata/5899642f6e1b25935d000161 "Merge two sorted arrays into one")
+```javascript
+function mergeArrays(arr1, arr2) {
+  let newArr = [];
+  for (let i = 0; i < arr1.length;i++){
+    if (!newArr.includes(arr1[i])) newArr.push(arr1[i]);
+  }
+  for (let i = 0; i < arr2.length;i++){
+    if (!newArr.includes(arr2[i])) newArr.push(arr2[i]);
+  }
+  return newArr.sort((a,b) => a-b);
+}
 ```
 
 ### 07.03.19
