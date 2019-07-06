@@ -3,11 +3,11 @@
 
 |Level | Name          | Link          | Date     |
 |:------: | -------------------- |:--------------------:| :-------:|
-|  |  |[]( "") |    |
-|  |  |[]( "") |    |
-|  |  |[]( "") | 07.04.19  |
-|  |  |[]( "") | 07.04.19 |
-|  |  |[]( "") | 07.04.19 |
+|  |  |[]( "") |  |
+| 5 kyu | Simple Pig Latin |[https://www.codewars.com/kata/520b9d2ad5c005041100000f](https://www.codewars.com/kata/520b9d2ad5c005041100000f "Simple Pig Latin") | 07.05.19  |
+| 6 kyu | WeIrD StRiNg CaSe |[https://www.codewars.com/kata/52b757663a95b11b3d00062d](https://www.codewars.com/kata/52b757663a95b11b3d00062d "WeIrD StRiNg CaSe") | 07.05.19  |
+| 7 kyu | Vowel one |[https://www.codewars.com/kata/580751a40b5a777a200000a1](https://www.codewars.com/kata/580751a40b5a777a200000a1 "Vowel one") | 07.04.19 |
+| 7 kyu | Numerical Palindrome #1 |[https://www.codewars.com/kata/58ba6fece3614ba7c200017f](https://www.codewars.com/kata/58ba6fece3614ba7c200017f "Numerical Palindrome #1") | 07.04.19 |
 | 8 kyu | Multiple of index |[https://www.codewars.com/kata/5a34b80155519e1a00000009](https://www.codewars.com/kata/5a34b80155519e1a00000009 "Multiple of index") | 07.04.19  |
 | 8 kyu | Count of positives / sum of negatives |[https://www.codewars.com/kata/576bb71bbbcf0951d5000044](https://www.codewars.com/kata/576bb71bbbcf0951d5000044 "Count of positives / sum of negatives") | 07.04.19  |
 | 8 kyu | Merge two sorted arrays into one |[https://www.codewars.com/kata/5899642f6e1b25935d000161](https://www.codewars.com/kata/5899642f6e1b25935d000161 "Merge two sorted arrays into one")      |  07.04.19   |
@@ -42,16 +42,78 @@
 ________________
 ## Strings
 
-**** []( "V")
+**** []( "")
 ```javascript
 
 ```
 
+### 07.05.19
+
+**Simple Pig Latin** [https://www.codewars.com/kata/520b9d2ad5c005041100000f](https://www.codewars.com/kata/520b9d2ad5c005041100000f "Simple Pig Latin")
+```javascript
+function pigIt(s){
+  let arr =  s.split(' ');
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++){
+    let s1 = '';
+    for (let j = 0; j < arr[i].length; j++){
+     arr[i] === '?'|| arr[i] ==='!'?s1 = arr[i] : s1 = arr[i].slice(1) + arr[i][0] + 'ay';
+    }
+      newArr.push(s1);
+  }
+  return newArr.join(' ');
+}
+```
+
+**WeIrD StRiNg CaSe** [https://www.codewars.com/kata/52b757663a95b11b3d00062d](https://www.codewars.com/kata/52b757663a95b11b3d00062d "WeIrD StRiNg CaSe")
+```javascript
+function toWeirdCase(s){
+  let arr =  s.split(' ');
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++){
+    let s1 = '';
+    for (let j = 0; j < arr[i].length; j++){
+      j % 2 === 0 ? s1 += arr[i][j].toUpperCase() : s1 += arr[i][j].toLowerCase();
+    }
+      newArr.push(s1);
+  }
+  return newArr.join(' ');
+}
+```
+
 ### 07.04.19
 
-**** []( "V")
-```javascript
+**Vowel one** [https://www.codewars.com/kata/580751a40b5a777a200000a1](https://www.codewars.com/kata/580751a40b5a777a200000a1 "Vowel one")
 
+*variant 2*
+```javascript
+function vowelOne(s){
+  return s.replace(/[^aeiou]/gi, '0').replace(/[aeiou]/gi, '1');
+}
+```
+
+*variant 1*
+```javascript
+function vowelOne(s){
+   let result = '';
+   for (let i = 0; i < s.length; i++){
+     s[i] == 'a' || s[i] === 'o' || s[i] === 'e'  || s[i] === 'i' || s[i] === 'u'|| s[i] === 'U'|| s[i] === 'A' || s[i] === 'O' || s[i] === 'E'  || s[i] === 'I' ? result += 1 : result += 0;
+     }
+   return result;
+}
+```
+
+**Numerical Palindrome #1** [https://www.codewars.com/kata/58ba6fece3614ba7c200017f](https://www.codewars.com/kata/58ba6fece3614ba7c200017f "Numerical Palindrome #1")
+```javascript
+function palindrome(num) {
+  console.log(num);
+  if (typeof num !== 'number' || num < 0) return "Not valid";
+  let str = num.toString();
+    for (let i = 0; i < str.length/2; i++){
+      if (str[i] !== str[str.length - 1 - i]) return false;
+  }
+  return true;
+}
 ```
 
 **Multiple of index** [https://www.codewars.com/kata/5a34b80155519e1a00000009](https://www.codewars.com/kata/5a34b80155519e1a00000009 "Multiple of index")
