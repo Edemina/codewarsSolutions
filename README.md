@@ -4,6 +4,13 @@
 |Level | Name          | Link          | Date     |
 |:------: | -------------------- |:--------------------:| :-------:|
 |  |  |[]( "") |  |
+| 8 kyu | Man in the west |[https://www.codewars.com/kata/59bd5dc270a3b7350c00008b](https://www.codewars.com/kata/59bd5dc270a3b7350c00008b "Man in the west") | 07.07.19 |
+| 8 kyu | You only need one - Beginner |[https://www.codewars.com/kata/57cc975ed542d3148f00015b](https://www.codewars.com/kata/57cc975ed542d3148f00015b "You only need one - Beginner") | 07.07.19 |
+| 7 kyu | Initialize my name |[https://www.codewars.com/kata/5768a693a3205e1cc100071f](https://www.codewars.com/kata/5768a693a3205e1cc100071f "Initialize my name") | 07.07.19 |
+| 8 kyu | Calculate average |[https://www.codewars.com/kata/57a2013acf1fa5bfc4000921](https://www.codewars.com/kata/57a2013acf1fa5bfc4000921 "Calculate average") | 07.07.19 |
+| 8 kyu | Reverse List Order |[https://www.codewars.com/kata/53da6d8d112bd1a0dc00008b](https://www.codewars.com/kata/53da6d8d112bd1a0dc00008b "Reverse List Order") | 07.07.19 |
+| 7 kyu | Ordering the words! |[https://www.codewars.com/kata/55d7e5aa7b619a86ed000070](https://www.codewars.com/kata/55d7e5aa7b619a86ed000070 "Ordering the words!") | 07.07.19 |
+| 7 kyu | Mumbling |[https://www.codewars.com/kata/5667e8f4e3f572a8f2000039](https://www.codewars.com/kata/5667e8f4e3f572a8f2000039 "Mumbling") | 07.06.19 |
 | 8 kyu | Reversed Strings |[https://www.codewars.com/kata/5168bb5dfe9a00b126000018](https://www.codewars.com/kata/5168bb5dfe9a00b126000018 "Reversed Strings") | 07.05.19 |
 | 8 kyu | String repeat |[https://www.codewars.com/kata/57a0e5c372292dd76d000d7e](https://www.codewars.com/kata/57a0e5c372292dd76d000d7e "String repeat") | 07.05.19 |
 | 7 kyu | Odd-Even String Sort |[https://www.codewars.com/kata/580755730b5a77650500010c](https://www.codewars.com/kata/580755730b5a77650500010c "Odd-Even String Sort") | 07.05.19 |
@@ -43,11 +50,95 @@
 
 # My Solutions
 ________________
-## Strings
+## Arrays
 
 **** []( "")
 ```javascript
 
+```
+
+### 07.07.19
+
+**Man in the west** [https://www.codewars.com/kata/59bd5dc270a3b7350c00008b](https://www.codewars.com/kata/59bd5dc270a3b7350c00008b "Man in the west")
+```javascript
+function checkTheBucket(bucket){
+  return bucket.includes('gold');
+}
+```
+
+**You only need one - Beginner** [https://www.codewars.com/kata/57cc975ed542d3148f00015b](https://www.codewars.com/kata/57cc975ed542d3148f00015b "You only need one - Beginner")
+```javascript
+function check(a,x){
+   return a.includes(x) ;
+}
+```
+
+**Initialize my name** [https://www.codewars.com/kata/5768a693a3205e1cc100071f](https://www.codewars.com/kata/5768a693a3205e1cc100071f "Initialize my name")
+```javascript
+function initializeNames(name){
+  let nameArr = name.split(' ');
+  for (let i = 1; i < nameArr.length-1; i++){
+    if (nameArr[i])  nameArr[i] = nameArr[i][0] + '.';
+    else break;
+  }
+  return nameArr.join(' ');
+}
+```
+
+**Calculate average** [https://www.codewars.com/kata/57a2013acf1fa5bfc4000921](https://www.codewars.com/kata/57a2013acf1fa5bfc4000921 "Calculate average")
+```javascript
+function find_average(arr) {
+  let sum = 0;
+  for( let i = 0; i < arr.length; i++){
+  sum += arr[i];
+  }
+  return sum / arr.length;
+}
+```
+
+
+## Strings
+
+### 07.07.19
+
+**Reverse List Order** [https://www.codewars.com/kata/53da6d8d112bd1a0dc00008b](https://www.codewars.com/kata/53da6d8d112bd1a0dc00008b "Reverse List Order")
+*version 2*
+```javascript
+function reverseList(list) {
+ return list.reverse();
+}
+```
+
+*version 1*
+```javascript
+function reverseList(list) {
+  let revList = [];
+  for (i = list.length - 1; i >= 0; i--){
+    revList.push(list[i]);
+  }
+  return revList;
+}
+```
+
+
+**Ordering the words!** [https://www.codewars.com/kata/55d7e5aa7b619a86ed000070](https://www.codewars.com/kata/55d7e5aa7b619a86ed000070 "Ordering the words!")
+```javascript
+function orderWord(s){
+ return !s ? 'Invalid String!' : s.split('').sort().join('');
+}
+```
+
+### 07.06.19
+
+**Mumbling** [https://www.codewars.com/kata/5667e8f4e3f572a8f2000039](https://www.codewars.com/kata/5667e8f4e3f572a8f2000039 "Mumbling")
+```javascript
+function accum(s) {
+	let s1 = s[0];
+  for(let i = 1; i< s.length; i++){
+    s1 +=`-${s[i].toUpperCase()}${s[i].repeat(i).toLowerCase()}`;
+  }
+  return s1;
+}
 ```
 
 ### 07.05.19
